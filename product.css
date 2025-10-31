@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vh;
+  margin: 5vh 10vh;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+
+.nav img {
+  height: 4.5vh;
+  object-fit: contain;
+}
+
+.icons img {
+  height: 3vh;
+  margin-left: 2vh;
+}
+
+.home {
+  margin-left: 10vh;
+  margin-bottom: 4vh;
+  color: #555;
+  font-size: 1rem;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 10vh 10vh 10vh;
+}
+
+.product-card {
+  text-align: left;
+  background-color: #f8f8f8;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 60px 80px 30px;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.footer-column h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-column a[href^="mailto:"] {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+}
+
+.signup input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.signup button {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.signup button:hover {
+  background-color: #333;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  padding-top: 15px;
+}
